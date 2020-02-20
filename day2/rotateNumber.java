@@ -21,7 +21,7 @@ public class rotateNumber{
             k+=count;
         }
         // finding div and mul
-        int div = 1; int mul =1;
+        int div = 1; double mul =1;
         //error:- you may write n instead of count in the loop.
         for(int i=1; i<=count; i++){
             if(i<=k){

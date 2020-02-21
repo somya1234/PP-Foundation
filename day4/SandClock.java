@@ -6,6 +6,7 @@ public class SandClock{
         int n = scn.nextInt();
         int st = n;
         int sp =0;
+
         int isp = n/2;
         for(int i=1; i<=n; i++){
             for(int j=1; j<=sp; j++){

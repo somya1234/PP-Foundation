@@ -1,3 +1,9 @@
 1. BAR CHART
 2. reverse array = for 0 to n/2
 swap arr[0] and arr[n-1]
+3. arrRotate
+4. arrSum
+5. arrRotate2
+6. firstIndexLastIndex
+7. sumOfTwoArrays
+8. ArrayToInteger

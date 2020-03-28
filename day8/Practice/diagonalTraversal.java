@@ -11,7 +11,7 @@ public class diagonalTraversal{
                 mat[i][j] = scn.nextInt();
             }
         }
-        //method -1 
+        //method -1 --> don't use this 
         for(int gap = 0; gap<n; gap++){
             for(int i=0; i<n; i++){
                 for(int j=0; j<n; j++){
@@ -25,12 +25,15 @@ public class diagonalTraversal{
         //method 2-
         //gap is till 3
         //0,1,2,3 
+        // time complexity - n2.
         for(int gap=0; gap<n; gap++){
             
-            // like
-            for(int row=0,col=row+gap; row<n&&col<n; row++,col++){
+            // both row and col gets incremented together.
+            for(int row=0,col=gap; row<n&&col<n; row++,col++){
                 System.out.println(mat[row][col]);
             }
         }
+
+        //method 3-
     }
 }

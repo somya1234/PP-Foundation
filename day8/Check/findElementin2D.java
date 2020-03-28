@@ -20,6 +20,7 @@ public class Main {
         int right_col = n-1;
         int left = arr[0][0];
         int right = arr[n-1][n-1];
+        // binary
         while(left<=right){
             int mid_row = (left_row+right_row)/2;
             int mid_col = (left_col+right_col)/2;

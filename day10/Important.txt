@@ -1,0 +1,2 @@
+1. Fibonacci
+2. logarithmicPower

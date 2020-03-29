@@ -18,7 +18,6 @@ public class firstIndex{
             return -1;
         }
         if(arr[idx] == d){
-            //return index
             return idx;
         }
         int ans = firstInd(arr,idx+1, d);

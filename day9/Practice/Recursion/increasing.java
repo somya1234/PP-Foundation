@@ -14,3 +14,5 @@ public class increasing{
         System.out.println(n);
     }
 }
+
+///okay

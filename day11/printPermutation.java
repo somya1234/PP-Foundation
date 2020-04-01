@@ -18,7 +18,7 @@ public class printPermutation{
      for(int i=0; i<str.length(); i++ ){
          char ch = str.charAt(i);
          String roq = str.substring(i+1);
-         printPermutations(roq,ans+ch);
+         printPermutations(roq,ans+ch+roq);
      }  
     }
 

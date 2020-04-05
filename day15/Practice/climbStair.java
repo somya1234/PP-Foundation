@@ -17,10 +17,9 @@ public class climbStair {
         for(int step=1; step<=3; step++){
             if(n-step>=0){
                 countPath += climbStairPath(n-step, dp);
-                dp[n] = countPath;
             }
         }
+        dp[n] = countPath;
         return dp[n];
-        return countPath;
     }
 }

@@ -18,9 +18,9 @@ public class climbStair {
             if(n-step>=0){
                 countPath += climbStairPath(n-step, dp);
                 dp[n] = countPath;
-                return dp[n];
             }
         }
+        return dp[n];
         return countPath;
     }
 }

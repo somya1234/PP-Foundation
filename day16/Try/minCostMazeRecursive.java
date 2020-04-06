@@ -26,7 +26,7 @@ public class minCostMazeRecursive {
             int ele = maze[row][col];
             return ele;
         }
-
+        
         int min = Integer.MAX_VALUE;
         int recCost = 0;
         recCost += minCostFind(maze, row, col+1);

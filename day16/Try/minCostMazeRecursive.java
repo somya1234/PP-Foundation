@@ -24,18 +24,19 @@ public class Main {
         int recCost = 0;
         int min_val = Integer.MAX_VALUE;
         if (row == n || col == m) {
-            return 0;
+            return Integer.MAX_VALUE;
         }
-        // if(row==n-1 && col==m-1){
-        //     return maze[row][col];
-        // }
-        
-        recCost += minCostFind(maze, row, col + 1);
-        recCost += minCostFind(maze, row + 1, col);
-        if (row != n && col != n) {
+        if(row==n-1 && col==m-1){
+            return maze[row][col];
+        }
+        if () {
             int ele = maze[row][col];
             return ele;
         }
+        
+        recCost += minCostFind(maze, row, col + 1);
+        recCost += minCostFind(maze, row + 1, col);
+       
         min_val += Math.min(min_val, recCost);
 
         return min_val;

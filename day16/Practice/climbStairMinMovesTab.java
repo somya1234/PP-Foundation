@@ -17,18 +17,18 @@ public class Main {
         int[] dp = new int[n];
         dp[n - 1] = 0;
 
-        int min = Integer.MAX_VALUE;
         for (int i = n - 2; i >= 0; i--) {
+            int min = Integer.MAX_VALUE;
             int maxStep = arr[i];
             if (arr[i] == 0) {
                 dp[i] = Integer.MAX_VALUE;
             } else {
-                for (int step = 1; i <= maxStep && i + step < n; step++) {
+                for (int step = 1; step <= maxStep && i + step < n; step++) {
                     //for i=7, step = 1 and 2.
-                    //i+step = 8 and 9 respectively.
-                    int d1 = dp[i + step];
-                    min = Math.min(min, d1);
+                    //i+step = 8 and 9 respectively
+                    min = Math.min(min, dp[i + step]);
                 }
+
                 dp[i] = min + 1;
             }
         }

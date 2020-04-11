@@ -3,28 +3,27 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(final String[] args) throws Exception {
-        final Scanner scn = new Scanner(System.in);
-        final int[] arr = new int[2];
+    public static void main(String[] args) throws Exception {
+        Scanner scn = new Scanner(System.in);
+        int[] arr = new int[2];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scn.nextInt();
         }
-        final int n = arr[0];
-        final int k = arr[1];
-        final int[][] mat = new int[n][k];
+        int n = arr[0];
+        int k = arr[1];
+        int[][] mat = new int[n][k];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < k; j++) {
                 mat[i][j] = scn.nextInt();
             }
         }
-        final int ans = minCost(mat);
+        int ans = minCost(mat);
         System.out.println(ans);
     }
-
-    public static int minCost(final int[][] mat) {
-        final int n = mat.length;
-        final int k = mat[0].length;
-        final int[][] dp = new int[n][k];
+    public static int minCost(int[][] mat) {
+        int n = mat.length;
+        int k = mat[0].length;
+        int[][] dp = new int[n][k];
         //solving easiest question
         for (int j = 0; j < k; j++) {
             dp[0][j] = mat[0][j];
@@ -61,5 +60,4 @@ public class Main {
         }
         return result;
     }
-}package day19.Class;
-
+}

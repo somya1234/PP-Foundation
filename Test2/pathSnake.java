@@ -7,15 +7,15 @@ public class Solution {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         int m = scn.nextInt();
-        int count = countSnake(n, m, n);
+        long count = countSnake(n, m, n);
         System.out.println(count);
         ArrayList<String> ans = getPaths(n, m, n);
         System.out.println(ans);
         printPaths(n, m, n, "");
     }
 
-    public static int countSnake(int n, int m, int new_m) {
-        int count = 0;
+    public static long countSnake(int n, int m, int new_m) {
+        long count = 0;
         if (n == 0) {
             count += 1;
             return count;
@@ -55,7 +55,7 @@ public class Solution {
                 // ArrayList<String> myGroup = new ArrayList<>();
                 myGroup = getPaths(n - i, m, new_m);
                 for (String val : myGroup) {
-                    result.add(n - i + val);
+                    result.add(i + val);
                 }
             }
         } else {
